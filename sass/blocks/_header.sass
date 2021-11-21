@@ -1,11 +1,13 @@
 .header
     background-color: #ffffff
-    &__top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 40px
+    padding-bottom: 40px
+    &__container
         display: flex
-        align-items: center
-        justify-content: space-between
-        padding-top: 40px
-        padding-bottom: 40px
+        width: 1110px
     &__search
         margin-right: auto
         margin-left: 108px
@@ -27,6 +29,7 @@
         color: $text-color
         &__button
             position: absolute
+            padding: 12px 25px 12px 25px
             height: 100%
             width: 65px
             top: 0
@@ -37,6 +40,7 @@
     display: flex
     align-items: center
     text-decoration: none
+    height: 40px
     &__avatar
         width: 40px
         height: 40px

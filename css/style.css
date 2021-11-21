@@ -354,13 +354,15 @@ template {
 
 .header {
   background-color: #ffffff;
-}
-.header__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+.header__container {
+  display: flex;
+  width: 1110px;
 }
 .header__search {
   margin-right: auto;
@@ -387,6 +389,7 @@ template {
 }
 .search__input__button {
   position: absolute;
+  padding: 12px 25px 12px 25px;
   height: 100%;
   width: 65px;
   top: 0;
@@ -399,6 +402,7 @@ template {
   display: flex;
   align-items: center;
   text-decoration: none;
+  height: 40px;
 }
 .user__avatar {
   width: 40px;
