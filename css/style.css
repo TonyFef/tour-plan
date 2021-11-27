@@ -486,7 +486,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 16px;
   padding-bottom: 70px;
 }
 .hotel-info {
@@ -526,7 +526,7 @@ template {
 .offer {
   font-size: 10px;
   line-height: 13px;
-  padding: 4px 9px;
+  padding: 5px 9px 4px 9px;
   background-color: #ec1f46;
   border-radius: 3px;
   color: #fff;
@@ -539,11 +539,19 @@ template {
   color: #fff;
   background-color: #ec1f46;
   border-radius: 4px;
+  margin-top: 9px;
+  padding-bottom: 6px;
 }
 .rating__text {
   font-size: 8px;
   line-height: 10px;
 }
+.rating__counter {
+  margin-top: 2px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -563,7 +571,7 @@ template {
     padding-bottom: 30px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 47px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -578,7 +586,22 @@ template {
     width: 340px;
   }
 }
-@media (max-width: 765px) {
+@media (max-width: 769px) {
+  .navbar-menu {
+    max-width: 673px;
+    margin: auto;
+  }
+
+  .star {
+    width: 6px;
+    height: 6px;
+  }
+
+  .hotel {
+    padding-top: 13px;
+  }
+}
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
@@ -638,6 +661,14 @@ template {
 @media (max-width: 321px) {
   .container {
     max-width: 280px;
+  }
+
+  .hotel {
+    padding-top: 0;
+  }
+
+  .stars {
+    margin-right: 17px;
   }
 
   .logo {
