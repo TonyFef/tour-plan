@@ -986,6 +986,9 @@ template {
   .hotel-right {
     min-height: 403px;
   }
+  .hotel-info__offer {
+    margin-top: 8px;
+  }
 
   .stars {
     margin-right: 17px;
@@ -1012,6 +1015,7 @@ template {
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
+    margin-bottom: 28px;
   }
   .newsletter-title__strong {
     font-style: normal;
