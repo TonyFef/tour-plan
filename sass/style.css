@@ -656,6 +656,10 @@ template {
   background-image: url(../img/arrow-prev.svg);
 }
 
+.swiper {
+  margin-left: 0;
+}
+
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -1135,30 +1139,57 @@ template {
     max-width: 673px;
     margin: auto;
   }
+  .logo-img {
+    max-width: 132px;
+    width: 100%;
+  }
   .star {
     width: 6px;
     height: 6px;
   }
   .hotel {
     padding-top: 18px;
-    padding-bottom: 60px;
+    padding-bottom: 55px;
   }
   .hotel-slider {
     width: 100%;
     margin-bottom: 30px;
   }
+  .hotel-info {
+    padding-bottom: 15px;
+  }
   .newsletter-wrapper {
     max-width: 700px;
     width: 92%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+  }
+  .subscribe {
+    margin-bottom: 9px;
+  }
+  .reviews {
+    padding-top: 45px;
+  }
+  .reviews-title {
+    font-size: 29px;
+    line-height: 38px;
+    margin-bottom: 45px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
   .reviews-slider__item:after, .reviews-slider__item:before {
     display: none;
+  }
+  .reviews-slider__avatar {
+    margin-bottom: 12px;
+  }
+  .reviews-slider__date {
+    margin-bottom: 0;
+  }
+  .reviews-slider__profile {
+    margin-bottom: 26px;
+  }
+  .reviews-slider__text {
+    max-width: 455px;
   }
   .reviews-slider__button {
     top: 32px;
@@ -1294,6 +1325,13 @@ template {
   .hotel-info__offer {
     margin-top: 8px;
   }
+  .hotel-slider {
+    height: 179px;
+  }
+  .booking {
+    padding-left: 22px;
+    padding-right: 21px;
+  }
   .stars {
     margin-right: 17px;
   }
@@ -1309,6 +1347,18 @@ template {
   }
   .map {
     height: 173px;
+  }
+  .subscribe__input {
+    padding-left: 20px;
+  }
+  .subscribe__button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .newsletter {
+    padding: 76px 0 75px 0;
   }
   .newsletter-title {
     font-style: normal;
@@ -1327,6 +1377,29 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .reviews {
+    padding-top: 40px;
+  }
+  .reviews-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 245px;
+    margin: auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+  }
+  .reviews-slider__username {
+    margin-bottom: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */
