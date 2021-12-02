@@ -7,6 +7,7 @@
         line-height: 45px
         text-align: center
         text-transform: uppercase
+        margin: 0
         margin-bottom: 70px
     &-slider
         &__item
@@ -19,6 +20,7 @@
             background-color: #fff
             border-radius: 8px
             padding: 0 62px 30px 62px
+            z-index: 1
             &:before
                 content: ''
                 position: absolute
@@ -28,6 +30,7 @@
                 height: 47px
                 background-image: url(../img/quote-left.svg)
                 background-repeat: no-repeat
+                z-index: 0
             &:after
                 content: ''
                 position: absolute
@@ -37,6 +40,7 @@
                 height: 47px
                 background-image: url(../img/quote-right.svg)
                 background-repeat: no-repeat
+                z-index: 0
         &__button
             position: absolute
             top: 50%
@@ -74,6 +78,7 @@
             font-size: 12px
             line-height: 15px
             color: $primary
+            margin: 0
             margin-bottom: 10px
         &__date
             font-style: normal
