@@ -50,6 +50,14 @@
         &-slider
             &__item
                 max-width: 580px
+    .activities
+        &-wrapper
+            flex-wrap: wrap
+        &__card
+            margin-bottom: 20px
+    .card
+        width: 49%
+        height: 255px
 @media (max-width: 769px)
     .navbar
         &-menu
@@ -104,14 +112,11 @@
                     right: 50%
                     margin-right: -65px
                     transform: translate(50%, 0)
-    .newsletter
-        &-wrapper
-            max-width: 576px
-            flex-wrap: wrap
-        &-title
-            margin-bottom: 37px
-        &__subscribe
-            width: 100%
+    .activities
+        padding-top: 40px
+        padding-bottom: 60px
+        &__title
+            padding-top: 31px
 @media (max-width: 767px)
     .container
         max-width: 576px
@@ -159,6 +164,14 @@
         width: 100%
     .map
         width: 100%
+    .newsletter
+        &-wrapper
+            max-width: 576px
+            flex-wrap: wrap
+        &-title
+            margin-bottom: 37px
+        &__subscribe
+            width: 100%
 @media (max-width: 576px)
     .logo
         width: 99px
@@ -179,6 +192,8 @@
                 object-fit: cover
                 height: 250px
                 width: 100%
+    .card
+        width: 100%
 @media (max-width: 321px)
     .container, .newsletter-wrapper
         max-width: 280px
@@ -231,6 +246,7 @@
             align-items: flex-start
     .reviews
         padding-top: 40px
+        padding-bottom: 0
         &-title
             display: flex
             max-width: 245px
@@ -245,3 +261,12 @@
         &-slider
             &__username
                 margin-bottom: 8px
+    .activities
+        &__title
+            font-size: 18px
+            line-height: 23px
+            padding-top: 52px
+            margin-bottom: 35px
+        &__card
+            margin-bottom: 24px
+
