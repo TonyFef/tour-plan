@@ -11,10 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="sass/style.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -24,7 +24,10 @@
               class="logo-img"
             />
           </a>
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile_hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -35,7 +38,11 @@
             </button>
           </form>
 
-          <a href="#" target="blank" class="user navbar__user">
+          <a
+            href="#"
+            target="blank"
+            class="user navbar__user navbar__user--mobile_hidden"
+          >
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -56,6 +63,35 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+              <a
+                href="#"
+                target="blank"
+                class="user navbar__user navbar__user--mobile_visible"
+              >
+                <img
+                  src="img/user-avatar.jpg"
+                  alt="Avatar: Nathan"
+                  class="avatar user__avatar"
+                />
+                <span class="user__name user__name--light">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search--mobile_visible"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="Icon: search" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
@@ -434,7 +470,9 @@
                 <a href="#" target="blank" class="footer__link">Spa Packages</a>
               </li>
               <li class="footer__item">
-                <a href="#" target="blank" class="footer__link">Hotel Day Packages</a>
+                <a href="#" target="blank" class="footer__link"
+                  >Hotel Day Packages</a
+                >
               </li>
               <li class="footer__item">
                 <a href="#" target="blank" class="footer__link">Restaurants</a>
@@ -457,13 +495,19 @@
                 <a href="#" target="blank" class="footer__link">Contact Us</a>
               </li>
               <li class="footer__item">
-                <a href="#" target="blank" class="footer__link"> How does it work?</a>
+                <a href="#" target="blank" class="footer__link">
+                  How does it work?</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" target="blank" class="footer__link">Frequently Asked Questions</a>
+                <a href="#" target="blank" class="footer__link"
+                  >Frequently Asked Questions</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" target="blank" class="footer__link">Deals.mu loyalty program</a>
+                <a href="#" target="blank" class="footer__link"
+                  >Deals.mu loyalty program</a
+                >
               </li>
               <li class="footer__item">
                 <a href="#" target="blank" class="footer__link">
