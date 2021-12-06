@@ -26,6 +26,8 @@
             align-items: start
             grid-row: 2 / 4
             grid-column: span 2
+    &__legal
+        justify-self: end
     &__contact
         &-details
             grid-column: span 2
@@ -95,7 +97,7 @@
         font-style: normal
         font-weight: bold
         font-size: 12px
-        line-height: 15px  
+        line-height: 15px
         color: $light
         background-color: $primary
         border: none
@@ -105,6 +107,25 @@
         font-style: normal
         font-weight: bold
         font-size: 12px
-        line-height: 15px  
+        line-height: 15px
         color: #e0e0e0
-
+        &-pay
+            width: 700px
+            display: flex
+            justify-content: space-between
+    &__wrapper
+        &-info
+            display: flex
+            justify-content: flex-end
+            margin-top: 95px
+    &__pay
+        width: 136px
+    &__conditions
+        width: 290px
+        display: flex
+        justify-content: space-between
+        align-items: end
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px

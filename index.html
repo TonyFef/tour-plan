@@ -11,12 +11,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="sass/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="navbar navbar--mobile_fixed">
       <div class="container">
+        <!-- Верхнее меню навигации -->
         <div class="navbar-top">
+          <!-- Логотип -->
           <a href="#" class="logo">
             <img
               src="img/horizontal-logo.svg"
@@ -24,6 +26,8 @@
               class="logo-img"
             />
           </a>
+
+          <!-- Строка поиска -->
           <form
             action="#"
             class="search navbar__search navbar__search--mobile_hidden"
@@ -46,7 +50,7 @@
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
-              class="avatar user__avatar"
+              class="user__avatar"
             />
             <span class="user__name">Nathan</span>
           </a>
@@ -59,9 +63,11 @@
         </div>
         <!-- /.navbar-top -->
       </div>
-      <!-- /.navbar-container -->
+      <!-- /.container -->
+
+      <!-- Нижнее меню навигации -->
       <div class="navbar-bottom">
-        <div class="container">
+        <div class="container navbar-bottom__container">
           <ul class="navbar-menu">
             <li class="navbar-menu__item navbar-menu__item--mobile_visible">
               <a
@@ -72,7 +78,7 @@
                 <img
                   src="img/user-avatar.jpg"
                   alt="Avatar: Nathan"
-                  class="avatar user__avatar"
+                  class="user__avatar"
                 />
                 <span class="user__name user__name--light">Nathan</span>
               </a>
@@ -121,6 +127,7 @@
       <!-- /.navbar-bottom -->
     </header>
     <!-- /.header -->
+
     <nav class="breadcrumb">
       <div class="container">
         <ul class="breadcrumb-list">
@@ -136,6 +143,7 @@
       <!-- /.container -->
     </nav>
     <!-- /.breadcrumb -->
+
     <section class="hotel">
       <div class="container">
         <div class="hotel-info">
@@ -158,6 +166,7 @@
             </p>
           </div>
           <!-- /.hotel-info__text -->
+
           <div class="rating hotel-info__rating">
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter">4.5/5</span>
@@ -165,6 +174,7 @@
           <!-- /.hotel-info__rating -->
         </div>
         <!-- /.hotel-info -->
+
         <div class="hotel-grid">
           <!-- Slider main container -->
           <div class="swiper hotel-slider hotel__slider">
@@ -202,6 +212,7 @@
               class="hotel-slider__button hotel-slider__button--next"
             ></button>
           </div>
+
           <div class="hotel-right">
             <div class="booking">
               <div class="booking__info">
@@ -232,6 +243,7 @@
                 <!-- /.booking__-room -->
               </div>
               <!-- /.booking__info -->
+
               <div class="booking__call-center">
                 <span class="booking__heading">Quick Booking</span>
                 <a href="tel:12100" class="booking__number">
@@ -240,13 +252,20 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button">View Other Options</button>
+
+              <button data-toggle="modal" class="button booking__button">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
+
             <div class="map">
               <iframe
                 class="map-frame"
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3A7e719728e853b0047b166e8e2209db64ec24bd195c8597a2d0c345a30e96d9e4&amp;source=constructor"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.1489232284355!2d-81.09642582405878!3d32.08182463043553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fb9e673178c8cf%3A0x5a3b052ba093a084!2sDoubleTree%20by%20Hilton%20Hotel%20Savannah%20Historic%20District!5e0!3m2!1sru!2skz!4v1637685486562!5m2!1sru!2skz"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
               ></iframe>
             </div>
             <!-- /.map -->
@@ -257,12 +276,14 @@
       </div>
       <!-- /.container -->
     </section>
+
     <section class="newsletter">
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
+
         <form action="#" class="subscribe newsletter__subscribe">
           <input
             type="text"
@@ -275,9 +296,11 @@
       <!-- /.newsletter-wrapper -->
     </section>
     <!-- /.newsletter -->
+
     <section class="reviews">
       <div class="container">
         <h2 class="reviews-title">What people think about us</h2>
+
         <div class="swiper reviews-slider">
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -314,6 +337,7 @@
                 </p>
               </div>
             </div>
+
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
@@ -344,6 +368,7 @@
                 </p>
               </div>
             </div>
+
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
@@ -379,6 +404,7 @@
               </div>
             </div>
           </div>
+
           <button
             class="reviews-slider__button reviews-slider__button--prev"
           ></button>
@@ -390,6 +416,7 @@
       </div>
     </section>
     <!-- /.reviews -->
+
     <section class="activities">
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
@@ -446,6 +473,7 @@
       </div>
       <!-- /.container -->
     </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
@@ -455,7 +483,7 @@
             class="logo footer__logo"
           />
           <div class="footer__list footer__categories">
-            <h3 class="footer__title">ALL CATEGORIES</h3>
+            <h3 class="footer__title">ALL&nbsp;CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" target="blank" class="footer__link">All Deals</a>
@@ -516,8 +544,11 @@
               </li>
             </ul>
           </div>
+
           <div class="footer__social-network">
-            <h3 class="footer__title footer__title--inline">Social Network</h3>
+            <h3 class="footer__title footer__title--inline">
+              Social&nbsp;Network
+            </h3>
             <div class="footer__social-links">
               <a href="#" target="blank" class="footer__link"
                 ><img src="img/fb.svg" alt="Icon: fb" /></a
@@ -531,7 +562,7 @@
           </div>
           <!-- /.footer__social-network -->
           <div class="footer__list footer__legal">
-            <h3 class="footer__title">LEGAL INFORMATION</h3>
+            <h3 class="footer__title">LEGAL&nbsp;INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" target="blank" class="footer__link"
@@ -557,7 +588,7 @@
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
-            <ul class="footer__ul">
+            <ul class="footer__ul footer__ul--pd-7">
               <li class="footer__item footer__item--mb-4">
                 <div class="footer__icon-wrapper">
                   <img
@@ -621,6 +652,18 @@
           <!-- /.footer__contact-form -->
         </div>
         <!-- /.footer-wrapper -->
+        <div class="footer__wrapper-info">
+          <div class="footer__info-pay">
+            <div class="footer__conditions">
+              <span>Disclaimer</span>
+              <span>Conditions of use</span>
+              <span>Cancellation policy</span>
+            </div>
+            <!-- /.footer__conditions -->
+            <img src="img/pay.png" alt="Photo: pay" class="footer__pay" />
+          </div>
+          <!-- /.footer__info-pay -->
+        </div>
       </div>
       <!-- /.container -->
     </footer>
