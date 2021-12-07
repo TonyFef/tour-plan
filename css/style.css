@@ -1183,8 +1183,8 @@ template {
     max-width: 700px;
   }
 
-  .logo {
-    width: 132px;
+  .logo-img {
+    max-width: 132px;
   }
 
   .navbar-top {
