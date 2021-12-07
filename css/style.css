@@ -1066,7 +1066,9 @@ template {
 }
 .footer__text {
   color: #BDBDBD;
+  margin-top: 25px;
   margin-bottom: 22px;
+  font-size: 14px;
 }
 .footer__link {
   text-decoration: none;
@@ -1112,11 +1114,20 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #e0e0e0;
+  margin-top: -6px;
 }
 .footer__info-pay {
   width: 700px;
   display: flex;
   justify-content: space-between;
+}
+.footer__contact-details {
+  margin-top: 7px;
+  margin-left: -5px;
+}
+.footer__contact-form {
+  margin-top: -5px;
+  margin-left: 5px;
 }
 .footer__wrapper-info {
   display: flex;
@@ -1135,6 +1146,13 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+}
+.footer__ul {
+  margin-left: 9px;
+}
+.footer ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 
 @media (max-width: 1200px) {
@@ -1245,7 +1263,7 @@ template {
 
   .footer-wrapper {
     grid-template-columns: repeat(6, 1fr);
-    grid-row-gap: 40px;
+    grid-row-gap: 47px;
   }
   .footer__input {
     flex-basis: 49%;
@@ -1277,6 +1295,9 @@ template {
     grid-column: span 5;
     grid-row: 4;
   }
+  .footer__ul {
+    margin-left: 0;
+  }
 }
 @media (max-width: 769px) {
   .navbar-menu {
@@ -1292,17 +1313,12 @@ template {
   }
 
   .user {
-    flex-direction: column;
     justify-content: center;
   }
   .user__name--light {
     color: #fff;
     margin-left: 0;
     margin-top: 10px;
-  }
-
-  body {
-    padding-top: 78px;
   }
 
   .logo-img {
@@ -1396,6 +1412,11 @@ template {
   .footer__logo {
     width: 100px;
     height: 120px;
+    grid-column: 1/2;
+  }
+  .footer__social-network {
+    margin-top: 20px;
+    margin-left: 10px;
   }
   .footer__categories {
     grid-column: span 1;
@@ -1403,12 +1424,35 @@ template {
   .footer__additional {
     grid-column: span 3;
     justify-self: center;
+    margin-left: -15px;
+  }
+  .footer__title {
+    margin-bottom: 12px;
+  }
+  .footer__title--mb-3 {
+    margin-bottom: 29px;
   }
   .footer__legal {
     justify-self: start;
+    margin-left: -5px;
   }
   .footer__contact-details {
     align-self: self-end;
+    margin-top: 16px;
+  }
+  .footer__contact-form {
+    margin-left: 0;
+    max-width: 539px;
+  }
+  .footer__wrapper-info {
+    margin-top: 55px;
+  }
+  .footer__conditions {
+    max-width: 283px;
+  }
+
+  .footer__ul--pd-7 {
+    margin-left: 12px;
   }
 }
 @media (max-width: 767px) {
@@ -1426,32 +1470,14 @@ template {
     top: 78px;
     padding-top: 30px;
   }
-  .navbar-bottom--visible {
-    display: block;
-  }
   .navbar-menu {
     flex-direction: column;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
   }
-
-  .menu-button {
-    display: flex;
-    width: 16px;
-    height: 11px;
-    padding: 0;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    border: none;
-    background-color: #ffffff;
-    cursor: pointer;
-  }
-  .menu-button__line {
-    width: 16px;
-    height: 1px;
-    background-color: #333333;
+  .navbar__search {
+    display: none;
   }
 
   .stars {
@@ -1501,7 +1527,35 @@ template {
     width: 100%;
   }
 }
+@media (max-width: 720px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer__legal {
+    margin-left: 10px;
+  }
+  .footer__additional {
+    margin-left: 10px;
+  }
+  .footer__categories {
+    margin-left: 10px;
+  }
+  .footer__contact-details {
+    margin-left: 10px;
+  }
+  .footer__ul--pd-7 {
+    margin-left: 12px;
+  }
+}
 @media (max-width: 576px) {
+  .navbar__user {
+    display: none;
+  }
+
   .logo {
     width: 99px;
   }
@@ -1517,6 +1571,24 @@ template {
   }
   .newsletter__title {
     margin-bottom: 37px;
+  }
+
+  .menu-button {
+    display: flex;
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
   }
 
   .subscribe {
@@ -1561,20 +1633,22 @@ template {
     flex-wrap: wrap;
   }
   .footer__additional {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 1;
+    justify-self: start;
   }
   .footer__categories {
-    grid-row: 4;
+    grid-row: 5;
     grid-column: 1;
   }
   .footer__legal {
-    grid-row: 5;
+    grid-row: 3;
     grid-column: 1;
   }
   .footer__contact-details {
     grid-row: 6;
     grid-column: 1;
+    width: 90%;
   }
   .footer__contact-form {
     grid-row: 7;
@@ -1583,6 +1657,12 @@ template {
   .footer__message {
     width: 281px;
     height: 123px;
+  }
+  .footer__input {
+    flex-basis: 100%;
+  }
+  .footer__info-pay {
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 321px) {
@@ -1686,6 +1766,9 @@ template {
     margin-right: -87px;
   }
 
+  .activities {
+    padding-bottom: 43px;
+  }
   .activities__title {
     font-size: 18px;
     line-height: 23px;
@@ -1695,6 +1778,9 @@ template {
   .activities__card {
     width: 100%;
     height: 255px;
+  }
+  .activities__card--3 {
+    margin-bottom: 25px;
   }
   .activities__card__title--1 {
     width: 65%;
@@ -1707,5 +1793,86 @@ template {
   }
   .activities__card__title--4 {
     width: 90%;
+  }
+
+  .footer {
+    padding-top: 60px;
+  }
+  .footer__social-network {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+  .footer__title {
+    margin-bottom: 16px;
+  }
+  .footer__title--inline {
+    margin-bottom: 20px;
+  }
+  .footer__legal {
+    margin-left: 2px;
+    margin-top: -4px;
+  }
+  .footer-wrapper {
+    grid-row-gap: 35px;
+  }
+  .footer__list {
+    margin-left: 0;
+  }
+  .footer__additional {
+    margin-top: -7px;
+  }
+  .footer__categories {
+    margin-top: -7px;
+  }
+  .footer__contact-details {
+    margin-top: 5px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .footer__contact-form {
+    margin-top: 10px;
+  }
+  .footer__title--mb-3 {
+    margin-bottom: 10px;
+  }
+  .footer__title--mb-15 {
+    margin-bottom: 20px;
+  }
+  .footer__text {
+    margin-bottom: 28px;
+  }
+  .footer__icon-wrapper {
+    min-width: 30px;
+  }
+  .footer__contact-form {
+    margin-top: 12px;
+  }
+  .footer__ul--pd-7 {
+    margin-left: 0;
+  }
+  .footer__message {
+    margin-top: 0;
+  }
+  .footer__info-pay {
+    width: 98%;
+    margin-right: 5px;
+  }
+  .footer__conditions {
+    margin-bottom: 10px;
+  }
+  .footer__contact-form {
+    margin-top: 10px;
+  }
+  .footer__button {
+    position: absolute;
+    margin-top: 360px;
+  }
+  .footer__wrapper-info {
+    margin-top: 95px;
+  }
+
+  ul {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
   }
 }/*# sourceMappingURL=style.css.map */
