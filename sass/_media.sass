@@ -207,8 +207,6 @@
             bottom: 0
             top: 78px
             padding-top: 30px
-            &--visible
-                display: block
         &-menu
             flex-direction: column
             &__item
@@ -307,24 +305,29 @@
                 grid-column: 1
                 flex-wrap: wrap
         &__additional
-            grid-row: 3
-            grid-column: 1
-        &__categories
             grid-row: 4
             grid-column: 1
-        &__legal
+            justify-self: start
+        &__categories
             grid-row: 5
+            grid-column: 1
+        &__legal
+            grid-row: 3
             grid-column: 1
         &__contact
             &-details
                 grid-row: 6
                 grid-column: 1
+                width: 90%
+
             &-form
                 grid-row: 7
                 grid-column: 1
         &__message
             width: 281px
             height: 123px
+        &__input
+            flex-basis: 100%
 @media (max-width: 321px)
     .container, .newsletter-wrapper
         max-width: 280px

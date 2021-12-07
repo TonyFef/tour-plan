@@ -406,9 +406,6 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1231,6 +1228,11 @@ template {
   grid-column: span 2;
 }
 
+.footer__legal {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
 .footer__contact-details {
   grid-column: span 2;
 }
@@ -1355,6 +1357,47 @@ template {
   color: #e0e0e0;
 }
 
+.footer__info-pay {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__wrapper-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 95px;
+}
+
+.footer__pay {
+  width: 136px;
+}
+
+.footer__conditions {
+  width: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1371,6 +1414,10 @@ template {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .card {
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -1502,28 +1549,14 @@ template {
 @media (max-width: 769px) {
   .navbar-menu {
     max-width: 673px;
+    height: 60px;
     margin: auto;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
   }
-  .navbar-menu__item--mobile_visible {
-    display: block;
-  }
-  .navbar--mobile_fixed {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 99;
-  }
-  .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
-    display: none;
-  }
-  .navbar__user--mobile_visible, .navbar__search--mobile_visible {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .navbar-bottom {
+    height: 60px;
   }
   .user {
     -webkit-box-orient: vertical;
@@ -1598,8 +1631,7 @@ template {
     top: 47%;
   }
   .activities {
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
   }
   .activities__title {
     padding-top: 31px;
@@ -1620,9 +1652,29 @@ template {
   .card__title--4 {
     width: 90%;
   }
-  .footer__input {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+  .footer {
+    padding-top: 68px;
+  }
+  .footer__logo {
+    width: 100px;
+    height: 120px;
+  }
+  .footer__categories {
+    grid-column: span 1;
+  }
+  .footer__additional {
+    grid-column: span 3;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .footer__legal {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .footer__contact-details {
+    -ms-flex-item-align: self-end;
+        -ms-grid-row-align: self-end;
+        align-self: self-end;
   }
 }
 
@@ -1639,9 +1691,6 @@ template {
     bottom: 0;
     top: 78px;
     padding-top: 30px;
-  }
-  .navbar-bottom--visible {
-    display: block;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -1789,22 +1838,26 @@ template {
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .footer__additional {
-    -ms-grid-row: 3;
-    grid-row: 3;
-    -ms-grid-column: 1;
-    grid-column: 1;
-  }
-  .footer__categories {
     -ms-grid-row: 4;
     grid-row: 4;
     -ms-grid-column: 1;
     grid-column: 1;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
-  .footer__legal {
+  .footer__categories {
     -ms-grid-row: 5;
     grid-row: 5;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__legal {
+    -ms-grid-row: 3;
+    grid-row: 3;
     -ms-grid-column: 1;
     grid-column: 1;
   }
@@ -1813,6 +1866,7 @@ template {
     grid-row: 6;
     -ms-grid-column: 1;
     grid-column: 1;
+    width: 90%;
   }
   .footer__contact-form {
     -ms-grid-row: 7;
@@ -1823,6 +1877,10 @@ template {
   .footer__message {
     width: 281px;
     height: 123px;
+  }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
