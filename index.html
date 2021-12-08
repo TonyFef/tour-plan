@@ -697,27 +697,32 @@
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
-        <a href="img/close.svg" alt="Icon: Close" class="modal__close"></a>
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: Close" />
+        </a>
         <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
-        <form action="send.php" method="post" class="modal__form">
+        <form action="send.php" method="post" class="form form-validate">
           <input
             type="text"
             class="modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required
           />
           <input
             type="text"
             class="modal__input"
             placeholder="Phone Number*"
             name="phone"
+            required
           />
           <textarea
             cols="30"
             rows="10"
-            class="modal__message"
+            class="message modal__message"
             placeholder="Message"
             name="message"
+            required
           ></textarea>
           <button class="button modal__button" type="submit">Send</button>
           <span class="modal__info">* Required Fields</span>

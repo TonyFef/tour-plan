@@ -22,12 +22,10 @@ $(document).ready(function () {
     },
   });
 
-  var menuButton = document.querySelector(".menu-button");
-  menuButton.addEventListener("click", function () {
+  var menuButton = $(".menu-button");
+  menuButton.on("click", function () {
     console.log("Клик по кнопке меню");
-    document
-      .querySelector(".navbar-bottom")
-      .classList.toggle("navbar-bottom--visible");
+    $(".navbar-bottom").toggleClass("navbar-bottom--visible");
   });
 
   var modalButton = $('[data-toggle="modal"]');

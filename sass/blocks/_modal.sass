@@ -6,9 +6,9 @@
         top: 0
         bottom: 0
         background-color: rgba(0, 143, 223, 0.39)
-        z-index: 100
         visibility: hidden
         opacity: 0
+        z-index: 100
         transition: opacity 0.2s
         &--visible
             visibility: visible
@@ -26,6 +26,8 @@
         z-index: 101
         visibility: hidden
         opacity: 0
+        transition: opacity 0.2s
+        overflow-y: auto
         &--visible
             visibility: visible
             opacity: 1
@@ -64,3 +66,4 @@
         font-size: 12px
         line-height: 15px
         color: $footer-text-color
+        margin-left: 40px
