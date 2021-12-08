@@ -65,7 +65,7 @@ $(document).ready(function () {
   }
 
   //Обработка форм
-  $(".form").each(function () {
+  $(".form-validate").each(function () {
     $(this).validate({
       errorClass: "Invalid",
       rules: {
