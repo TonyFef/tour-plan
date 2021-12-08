@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -19,7 +20,7 @@
         <!-- Верхнее меню навигации -->
         <div class="navbar-top">
           <!-- Логотип -->
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-left" data-aos-delay="300ms">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: BestTourPlan"
@@ -29,6 +30,8 @@
 
           <!-- Строка поиска -->
           <form
+            data-aos="fade-left"
+            data-aos-delay="300ms"
             action="#"
             class="search navbar__search navbar__search--mobile_hidden"
           >
@@ -427,7 +430,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The curious corner 
@@ -439,7 +446,11 @@
             </h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card activities__card--3">
+          <div
+            class="card activities__card activities__card--3"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/activity-1.jpg"
               alt="Gymkhana club golf
@@ -451,7 +462,11 @@
             </h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Tamarind falls hiking
@@ -463,7 +478,11 @@
             </h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="img/activity-3.jpg"
               alt="The blue marine discovery
@@ -761,6 +780,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
