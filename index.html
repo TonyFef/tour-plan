@@ -651,25 +651,32 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
+            <form action="send.php" method="POST" class="form footer__form">
+              <div class="footer__input-group">
+                <input
                 type="text"
                 class="footer__input"
                 placeholder="Your Full Name*"
                 name="name"
+                required
               />
-              <input
+              </div>
+              <div class="footer__input-group">
+                <input
                 type="text"
                 class="footer__input"
                 placeholder="Phone Number*"
                 name="phone"
+                required
               />
+              </div>
               <textarea
                 cols="30"
                 rows="10"
                 class="footer__message"
                 placeholder="Message"
                 name="message"
+                required
               ></textarea>
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -704,16 +711,23 @@
         <form action="send.php" method="post" class="form form-validate">
           <input
             type="text"
-            class="modal__input"
+            class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
             required
           />
           <input
-            type="text"
-            class="modal__input"
+            type="tel"
+            class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
+            required
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
             required
           />
           <textarea
@@ -733,6 +747,8 @@
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
