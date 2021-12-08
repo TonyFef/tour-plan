@@ -19,7 +19,7 @@
         <!-- Верхнее меню навигации -->
         <div class="navbar-top">
           <!-- Логотип -->
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: BestTourPlan"
@@ -149,18 +149,20 @@
         <div class="hotel-info">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
-            
-              <h1 class="hotel-name hotel-info__name">Сообщение отправлено!</h1>
+              <h1 class="hotel-name hotel-info__name">Your message is sent!</h1>
             </div>
             <!-- /.hotel-wrapper -->
-            <p class="hotel-description hotel-info__description">
-              Наш менеджер позвонит Вам через 5 минут
-            </p>
+            <div class="thankyou">
+              <p class="thankyou-text">Manager will call you in 5 minutes.</p>
+              <button class="thankyou-comeback">
+                <a class="thankyou-comeback--link" href="index.html">Come back to page</a></button>
+            </div>
           </div>
+
+          <!-- /.comeback -->
           <!-- /.hotel-info__text -->
         </div>
         <!-- /.hotel-info -->
-
       </div>
       <!-- /.container -->
     </section>
@@ -168,11 +170,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
-            alt="Logo: Best Tour Plan"
-            class="logo footer__logo"
-          />
+          <a href="index.html">
+            <img
+              src="img/vertical-logo.svg"
+              alt="Logo: Best Tour Plan"
+              class="logo footer__logo"
+            />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL&nbsp;CATEGORIES</h3>
             <ul class="footer__ul">
@@ -327,8 +331,9 @@
                     alt="Icon: email"
                   />
                 </div>
-               <a href="mail=cherly.lawson@example.com" class="footer__link"
-                  >cherly.lawson@example.com</a>
+                <a href="mail=cherly.lawson@example.com" class="footer__link"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>

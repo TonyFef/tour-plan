@@ -31,8 +31,8 @@ $(document).ready(function () {
 
   // Параллакс
   //$(".newslatter").parallax({
-   // imageSrc: "img/newsletter-bg.jpeg",
-    //speed: 0.4,
+  // imageSrc: "img/newsletter-bg.jpeg",
+  //speed: 0.4,
   //});
 
   // Модальная кнопка
@@ -64,10 +64,20 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
   }
 
+  // Закрытие окна нажатием на Escape
+  $(document).keyup(function (e) {
+    if (e.key === "Escape" || e.keyCode === 27) {
+      const modalOverlay = $(".modal__overlay");
+      const modalDialog = $(".modal__dialog");
+      modalOverlay.removeClass("modal__overlay--visible");
+      modalDialog.removeClass("modal__dialog--visible");
+    }
+  });
+
   //Обработка форм
   $(".form-validate").each(function () {
     $(this).validate({
-      errorClass: "Invalid",
+      errorClass: "invalid",
       rules: {
         name: {
           required: true,
@@ -76,6 +86,9 @@ $(document).ready(function () {
         email: {
           required: true,
           email: true,
+        },
+        phone: {
+          minlength: 11,
         },
       },
 
@@ -90,6 +103,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Телефон обязателен",
+          minlength: "Введите корректный номер",
         },
       },
     });
