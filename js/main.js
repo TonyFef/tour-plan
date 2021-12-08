@@ -30,10 +30,10 @@ $(document).ready(function () {
   });
 
   // Параллакс
-  $(".newslatter").parallax({
-    imageSrc: "img/newsletter-bg.jpeg",
-    speed: 0.4,
-  });
+  //$(".newslatter").parallax({
+   // imageSrc: "img/newsletter-bg.jpeg",
+    //speed: 0.4,
+  //});
 
   // Модальная кнопка
   const menuButton = $(".menu-button");
