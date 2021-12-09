@@ -20,6 +20,17 @@
                 flex-basis: 100%
                 &-wrapper
                     flex-direction: column
+        &__social
+            &-network
+                display: flex
+                align-items: start
+                grid-row: 2 / 4
+                grid-column: span 2
+            &-links
+                display: flex
+                align-items: center
+                justify-content: space-between
+                min-width: 83px
     .card
         width: 200px
         height: 200px
@@ -448,6 +459,8 @@
             grid-row: 1
             grid-column: 1
             width: 104px
+        &__list
+            margin-top: 0
         &__social
             &-network
                 grid-row: 2
@@ -484,6 +497,8 @@
                 width: auto
                 flex-direction: column
                 height: 50px
+        &__form
+            width: 90%
         .modal
             &__dialog
                 padding: 33px 40px
@@ -514,6 +529,11 @@
 @media (max-width: 576px)
     .logo
         max-width: 99px
+    .navbar
+        &--mobile
+            &_fixed
+                max-width: 576px
+                margin: auto
     .hotel
         padding-bottom: 40px
         &-slider
@@ -555,7 +575,7 @@
         &__legal
             grid-row: 3
             grid-column: 1
-        &__information
+        &__additional
             grid-row: 4
             grid-column: 1
         &__categories
@@ -573,11 +593,25 @@
                 flex-basis: 100%
             &-wrapper
                 flex-direction: column
+        &__form
+            width: 90%
 
 @media (max-width: 480px)
+    .container
+        width: 90%
     .navbar
+        &-top
+            max-width: 100%
         &__search
             width: 243px
+        &--mobile
+            &_fixed
+                max-width: 480px
+                margin: auto
+    .breadcrumb
+        &-list
+            padding-top: 12px
+            padding-bottom: 14px
     .hotel
         &-grid
             padding-top: 18px
@@ -586,8 +620,71 @@
         &__button
             width: 12px
             height: 12px
+        &-info
+            &__offer
+                margin-left: 5px
+    .booking
+        padding-top: 35px
+        &__text
+            margin-top: 5px
+    .newsletter
+        padding: 76px 0 85px 0
+        &-title
+            font-style: normal
+            font-weight: 300
+            font-size: 20px
+            padding-bottom: 30px
+            &__strong
+                font-style: normal
+                font-weight: 600
+                font-size: 30px
+                text-transform: uppercase
+    .reviews
+        padding-top: 40px
+        padding-bottom: 0
+        &-title
+            display: flex
+            max-width: 245px
+            margin: auto
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            text-align: center
+            text-transform: uppercase
+            margin-bottom: 42px
+        &-slider
+            &__username
+                margin-bottom: 8px
+            &__button
+                &--prev
+                    margin-left: -93px
+                &--next
+                    margin-right: -87px
+    .activities
+        padding-bottom: 43px
+        &__title
+            font-size: 18px
+            line-height: 23px
+            padding-top: 57px
+            margin-bottom: 35px
+        &__card
+            width: 100%
+            height: 255px
+            &--3
+                margin-bottom: 25px
+            &__title
+                &--1
+                    width: 65%
+                &--2
+                    width: 75%
+                &--3
+                    width: 75%
+                &--4
+                    width: 90%
 
     .footer
+        padding-top: 40px
         &-wrapper
             grid-template-columns: minmax(280px, max-content)
         &__form
@@ -596,14 +693,17 @@
         &__input
             padding-top: 18px
             padding-bottom: 18px
-        &-group
-            width: 100%
+            &-group
+                width: 100%
         &__message
             width: 100%
             margin-bottom: 15px
         &__button
             order: 1
             margin-top: 15px
+    ul
+        padding-inline-start: 0
+
     .modal
         &__input
             min-width: 230px
