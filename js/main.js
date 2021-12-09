@@ -97,7 +97,7 @@ $(document).ready(function () {
           email: true,
         },
         phone: {
-          minlength: 16,
+          minlength: 18,
         },
       },
 
