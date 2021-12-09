@@ -144,7 +144,75 @@
     .modal
         &__dialog
             padding: 33px 56px
+
 @media (max-width: 769px)
+    .navbar
+        &-top
+            padding-top: 25px
+            padding-bottom: 20px
+        &__search
+            margin-left: 0
+        &__user
+            height: 55px
+    .hotel
+        &-info
+            padding-bottom: 15px
+    .newsletter
+        padding-top: 94px
+        padding-bottom: 91px
+    .reviews
+        padding-top: 44px
+        padding-bottom: 100px
+        &-title
+            font-size: 30px
+            line-height: 38px
+            margin-bottom: 48px
+        &-slider
+            &__date
+                margin-bottom: 0
+            &__profile
+                margin-bottom: 25px
+            &__button
+                transform: translateY(0)
+    .star
+        width: 6px
+        height: 6px
+    .activities
+        padding-bottom: 48px
+    .footer
+        padding-top: 48px
+        &-wrapper
+            grid-gap: 40px
+        &__list
+            margin-top: -20px
+        &__social
+            &-network
+                grid-row: 1 / 2
+                grid-column: span 4
+        &__categories
+            grid-row: 2 / 3
+            grid-column: span 1
+        &__additional
+            grid-column: span 2
+        &__legal
+            justify-self: center
+        &__contact
+            &-details
+                margin-top: 15px
+            &-form
+                margin: 0
+        &__title
+            &--mb-15
+                margin-bottom: 25px
+        &__form
+            width: 540px
+        &__wrapper
+            &-info
+                margin-top: 5px
+        &__info
+            margin-top: 10px
+
+@media (max-width: 767px)
     .container
         max-width: 576px
         width: 86%
@@ -458,7 +526,6 @@
             font-size: 18px
             line-height: 23px
 
-  // Секция с отзывами
     .reviews
         padding-bottom: 50px
         &-slider
