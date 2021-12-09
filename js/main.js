@@ -31,10 +31,10 @@ $(document).ready(function () {
 
   // Параллакс
   $(".newsletter").parallax({
-  imageSrc: "img/newsletter-bg.jpg",
-  speed: 0.4,
+    imageSrc: "img/newsletter-bg.jpg",
+    speed: 0.4,
   });
-  
+
   // Модальная кнопка
   const menuButton = $(".menu-button");
   // Вызов меню
@@ -64,6 +64,15 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
   }
 
+  // Закрытие по клику вне блока
+  $(document).click(function (event) {
+    //if you click on anything except the modal itself or the "open modal" link, close the modal
+    if (!$(event.target).closest(".modal__dialog,.booking__button").length) {
+      $("body").find(".modal__dialog").removeClass("modal__dialog--visible");
+      $("body").find(".modal__overlay").removeClass("modal__overlay--visible");
+    }
+  });
+
   // Закрытие окна нажатием на Escape
   $(document).keyup(function (e) {
     if (e.key === "Escape" || e.keyCode === 27) {
@@ -88,13 +97,13 @@ $(document).ready(function () {
           email: true,
         },
         phone: {
-          minlength: 11,
+          minlength: 16,
         },
       },
 
       messages: {
         name: {
-          required: "Pleas specify youк name",
+          required: "Please specify your name",
           minlength: "At least 2 symbols required",
         },
         email: {
@@ -102,14 +111,12 @@ $(document).ready(function () {
           email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
-          required: "Телефон обязателен",
-          minlength: "Enter correcrt phone number",
+          required: "We need your phone number to contact you",
+          minlength: "Enter correct phone number",
         },
       },
     });
-    AOS.init();
   });
+  AOS.init();
   $(".phone").mask("+7 (999) 999-99-99");
 });
-
-

@@ -47,6 +47,7 @@ input {
 .invalid {
   color: #ec1f46;
   border-bottom: 1px solid #ec1f46;
+  position: relative;
 }
 
 .form {
@@ -2538,6 +2539,7 @@ template {
   }
   .navbar--mobile_fixed {
     max-width: 576px;
+    width: 100%;
     margin: auto;
   }
   .hotel {

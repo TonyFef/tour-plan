@@ -169,3 +169,30 @@
                 margin-top: 95px
     ul
         padding-inline-start: 0
+
+
+
+
+&-wrapper
+            grid-template-columns: minmax(280px, max-content)
+        &__form
+            width: 100%
+            flex-direction: column
+            align-items: start
+        &__input
+            padding-top: 18px
+            padding-bottom: 18px
+        &-group
+            width: 100%
+        &__message
+            max-width: 280px
+            margin-bottom: 15px
+        &__button
+            order: 1
+            margin-top: 15px
+
+
+
+
+
+
