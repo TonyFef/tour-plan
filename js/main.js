@@ -38,9 +38,9 @@ $(document).ready(function () {
   // Модальная кнопка
   const menuButton = $(".menu-button");
   // Вызов меню
-  menuButton.on("click", function () {
-    $(".navbar-bottom").toggleClass("navbar-bottom--visible");
-  });
+  menuButton.on("click", () =>
+    $(".navbar-bottom").toggleClass("navbar-bottom--visible")
+  );
 
   //Модальная кнопка
   const modalButton = $('[data-toggle="modal"]');

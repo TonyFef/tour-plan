@@ -902,6 +902,206 @@ template {
   color: #fff;
 }
 
+.packages {
+  padding: 40px 0 70px 0;
+}
+
+.packages__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.packages-wrapper {
+  margin-top: 65px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(min-content, 350px))[3];
+      grid-template-columns: repeat(3, minmax(-webkit-min-content, 350px));
+      grid-template-columns: repeat(3, minmax(min-content, 350px));
+  grid-gap: 30px;
+}
+
+.packet {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #0A223D;
+}
+
+.packet:first-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+}
+
+.packet__info {
+  padding: 30px 21px 25px 32px;
+}
+
+.packet__image {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.packet__offer {
+  position: absolute;
+  left: 0;
+  top: 26px;
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.packet__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+
+.packet__room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 23px;
+}
+
+.packet__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 11px;
+}
+
+.packet__text:last-child {
+  margin-bottom: 0;
+}
+
+.packet__paragraph {
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+}
+
+.packet__order {
+  margin-top: 24px;
+}
+
+.packet__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.packet__discount {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #fff;
+}
+
+.packet__pricetag {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.packet__button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+  background-color: #ec1f46;
+  cursor: pointer;
+}
+
+.other-packet__image {
+  width: 50%;
+  height: 100%;
+}
+
+.other-packet__offer {
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.other-packet__info {
+  padding: 47px 21px 30px 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.other-packet__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.other-packet__description {
+  margin: 0;
+  max-width: 300px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+  color: #fff;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
@@ -1242,6 +1442,7 @@ template {
 .footer-wrapper {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (minmax(min-content, 1fr))[4];
       grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(4, minmax(min-content, 1fr));
   grid-gap: 20px;
@@ -1664,6 +1865,7 @@ template {
     width: 75%;
   }
   .footer-wrapper {
+    -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 47px;
   }
