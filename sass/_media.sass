@@ -20,22 +20,14 @@
                 flex-basis: 100%
                 &-wrapper
                     flex-direction: column
-        &__social
-            &-network
-                display: flex
-                align-items: start
-                grid-row: 2 / 4
-                grid-column: span 2
-            &-links
-                display: flex
-                align-items: center
-                justify-content: space-between
-                min-width: 83px
     .card
         width: 200px
         height: 200px
 
 @media (max-width: 992px)
+    a, button
+        &:hover
+            cursor: default
     .container, .newsletter-wrapper
         max-width: 700px
     .logo
@@ -56,7 +48,8 @@
         &-bottom
             &__container
                 max-width: 673px
-
+    .rating
+        cursor: default
     .search
         &__input
             width: 340px
@@ -121,13 +114,8 @@
         padding-top: 73px
         &-wrapper
             grid-template-columns: repeat(5, minmax(min-content, 1fr))
-            grid-gap: 45px
+            grid-gap: 45 px
             margin-bottom: 56px
-        &__input
-            &-group
-                flex-basis: 48%
-            &-wrapper
-                flex-direction: row
         &__logo
             grid-row: 1 / 2
             width: 100px
@@ -138,20 +126,23 @@
                 align-self: center
         &__categories
             grid-row: 2 / 3
-            grid-column: span 2
+            grid-column: span 1
         &__legal
             grid-column: span 2
         &__additional
             grid-column: span 2
         &__contact
             &-details
-                grid-column: span 5
                 grid-row: 3
+                grid-column: span 5
             &-form
-                grid-column: span 4
                 grid-row: 4
-        &__ul
-            margin-left: 0
+                grid-column: span 4
+        &__input
+            &-group
+                flex-basis: 49%
+            &-wrapper
+                flex-direction: row
     .modal
         &__dialog
             padding: 33px 56px
@@ -294,6 +285,13 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
+    .user
+        flex-direction: column
+        justify-content: center
+        &__name
+            &--light
+                margin: 10px 0 0 0
+                color: $light
     .stars
         flex-basis: content
     .hotel
@@ -380,7 +378,7 @@
                 padding: 30px 21px 30px 21px
                 width: 100%
             &__image
-                height: auto
+                height: 500px
             &__description
                 display: none
 
@@ -459,8 +457,6 @@
             grid-row: 1
             grid-column: 1
             width: 104px
-        &__list
-            margin-top: 0
         &__social
             &-network
                 grid-row: 2
@@ -468,20 +464,16 @@
                 flex-direction: column
             &-links
                 margin-top: 20px
-        &__categories
-            grid-row: 5
-            grid-column: span 2
-        &__additional
-            grid-row: 4
-            grid-column: span 2
-        &__title
-            margin-bottom: 12px
-            &--mb-3
-                margin-bottom: 29px
         &__legal
             grid-row: 3
             grid-column: span 2
             justify-self: start
+        &__information
+            grid-row: 4
+            grid-column: span 2
+        &__categories
+            grid-row: 5
+            grid-column: span 2
         &__contact
             &-details
                 grid-row: 6
@@ -489,29 +481,27 @@
             &-form
                 grid-row: 7
                 grid-column: span 3
-        &__wrapper
-            &-info
-                justify-content: start
         &__info
             &-pay
                 width: auto
                 flex-direction: column
                 height: 50px
+        &__wrapper
+            &-info
+                justify-content: start
+    .modal
+        &__dialog
+            padding: 33px 40px
         &__form
-            width: 90%
-        .modal
-            &__dialog
-                padding: 33px 40px
-            &__form
-                flex-direction: column
-                align-items: start
-            &__input
-                min-width: 300px
-            &__button
-                order: 1
-                margin-top: 15px
-            &__info
-                width: 100%
+            flex-direction: column
+            align-items: start
+        &__input
+            min-width: 300px
+        &__button
+            order: 1
+            margin-top: 15px
+        &__info
+            width: 100%
     //.footer
         //&__ul
             //&--pd-7
@@ -535,6 +525,12 @@
                 max-width: 576px
                 width: 100%
                 margin: auto
+        &__user
+            height: 68px
+        &-menu
+            &__item
+                &--mb-0
+                    margin-bottom: 0
     .hotel
         padding-bottom: 40px
         &-slider
@@ -600,6 +596,9 @@
 @media (max-width: 480px)
     .container
         width: 90%
+    .logo
+        &-img
+            width: 99px
     .navbar
         &-top
             max-width: 100%
@@ -685,7 +684,7 @@
                     width: 90%
 
     .footer
-        padding-top: 40px
+        padding-top: 69px
         &-wrapper
             grid-template-columns: minmax(280px, max-content)
         &__form
@@ -708,3 +707,39 @@
     .modal
         &__input
             min-width: 230px
+
+@media (max-width: 321px)
+    .footer
+        &__list
+            margin-top: 0
+        &-wrapper
+            grid-template-columns: 270px
+        &-info
+            width: 260px
+        &__info
+            &-pay
+                width: 260px
+        &__conditions
+            width: 260px
+        &__contact
+            &-details
+                margin-top: 5px
+            &-form
+                padding-top: 11px
+        &__icon
+            &-wrapper
+                min-width: 24px
+        &__title
+            &--mb-15
+                margin-bottom: 15px
+        &__submittion
+            position: relative
+        &__info
+            position: absolute
+            bottom: 60px
+        &__button
+            margin-top: 30px
+        &__ul
+            &--pd-7
+                padding-left: 0
+

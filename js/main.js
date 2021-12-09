@@ -108,7 +108,7 @@ $(document).ready(function () {
         },
         email: {
           required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com",
+          email: "Address must be in the format of name@domain.com",
         },
         phone: {
           required: "We need your phone number to contact you",
@@ -117,6 +117,6 @@ $(document).ready(function () {
       },
     });
   });
-  AOS.init();
   $(".phone").mask("+7 (999) 999-99-99");
+  AOS.init();
 });
