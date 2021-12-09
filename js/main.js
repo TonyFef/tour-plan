@@ -95,7 +95,7 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Pleas specify youк name",
-          minlength: "Имя должно быть не короче 2 символов",
+          minlength: "At least 2 symbols required",
         },
         email: {
           required: "We need your email address to contact you",
@@ -103,7 +103,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Телефон обязателен",
-          minlength: "Введите корректный номер",
+          minlength: "Enter correcrt phone number",
         },
       },
     });
