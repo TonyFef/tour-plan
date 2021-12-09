@@ -30,11 +30,11 @@ $(document).ready(function () {
   });
 
   // Параллакс
-  //$(".newslatter").parallax({
-  // imageSrc: "img/newsletter-bg.jpeg",
-  //speed: 0.4,
-  //});
-
+  $(".newsletter").parallax({
+  imageSrc: "img/newsletter-bg.jpg",
+  speed: 0.4,
+  });
+  
   // Модальная кнопка
   const menuButton = $(".menu-button");
   // Вызов меню
@@ -111,3 +111,5 @@ $(document).ready(function () {
   });
   $(".phone").mask("+7 (999) 999-99-99");
 });
+
+
