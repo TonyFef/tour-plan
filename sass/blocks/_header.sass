@@ -35,7 +35,29 @@
             &--mobile
                 &_visible
                     display: none
+.navbar
+    &__search
+        &--mobile_hidden i
+            position: absolute
+            width: 1px
+            height: 65%
+            background-color: gray
+            left: 15px
+            top: 10%
+            animation-name: blink
+            animation-duration: 1000ms
+            animation-iteration-count: infinite
+            opacity: 1
+.navbar
+    &__search
+        &--mobile_hidden input:focus + i
+            display: none
 
+        @keyframes blink
+            0%
+                opacity: 0
+            100%
+                opacity: 1
 .logo
     width: 177px
 .search

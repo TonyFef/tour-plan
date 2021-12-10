@@ -493,6 +493,44 @@ template {
   display: none;
 }
 
+.navbar__search--mobile_hidden i {
+  position: absolute;
+  width: 1px;
+  height: 65%;
+  background-color: gray;
+  left: 15px;
+  top: 10%;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+.navbar__search--mobile_hidden input:focus + i {
+  display: none;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .logo {
   width: 177px;
 }
@@ -1991,10 +2029,10 @@ template {
     padding-top: 73px;
   }
   .footer-wrapper {
-    -ms-grid-columns: (minmax(min-content, 1fr))[5];
-        grid-template-columns: repeat(5, minmax(-webkit-min-content, 1fr));
-        grid-template-columns: repeat(5, minmax(min-content, 1fr));
-    grid-gap: 45 px;
+    -ms-grid-columns: (minmax(min-content, 1fr))[4];
+        grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
+        grid-template-columns: repeat(4, minmax(min-content, 1fr));
+    grid-gap: 2 px;
     margin-bottom: 56px;
   }
   .footer__logo {
