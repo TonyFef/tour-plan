@@ -67,7 +67,11 @@ $(document).ready(function () {
   // Закрытие по клику вне блока
   $(document).click(function (event) {
     //if you click on anything except the modal itself or the "open modal" link, close the modal
-    if (!$(event.target).closest(".modal__dialog,.booking__button").length) {
+    if (
+      !$(event.target).closest(
+        ".modal__dialog,.booking__button,.packet__button,.card__button"
+      ).length
+    ) {
       $("body").find(".modal__dialog").removeClass("modal__dialog--visible");
       $("body").find(".modal__overlay").removeClass("modal__overlay--visible");
     }
@@ -108,7 +112,7 @@ $(document).ready(function () {
         },
         email: {
           required: "We need your email address to contact you",
-          email: "Address must be in the format of name@domain.com",
+          email: "Address format - name@domain.com",
         },
         phone: {
           required: "We need your phone number to contact you",

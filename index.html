@@ -357,7 +357,7 @@
                 <span class="packet__discount">$ 10,500</span>
                 <div class="packet__price">
                   <strong class="packet__pricetag">$ 8,500</strong>
-                  <button data-toggle="modal" class="button packet__button">
+                  <button data-toggle="modal" class="packet__button">
                     Book Now
                   </button>
                 </div>
@@ -577,14 +577,17 @@
           method="post"
           class="subscribe newsletter__subscribe form-validate"
         >
-          <input
-            type="email"
-            class="subscribe__input"
-            placeholder="Your email address"
-            name="email"
-            required
-          />
-          <button type="submit" class="subscribe__button">Send</button>
+          <div class="newsletter__email">
+            <input
+              type="email"
+              class="subscribe__input"
+              placeholder="Your email address"
+              name="email"
+              required
+            />
+            <button type="submit" class="subscribe__button">Send</button>
+          </div>
+          <!-- /.newsletter__email -->
         </form>
       </div>
       <!-- /.newsletter-wrapper -->
@@ -826,23 +829,23 @@
           <!-- /.footer__list -->
           <div class="footer__list footer__information">
             <h3 class="footer__title">ADDITIONAL&nbsp;INFORMATION</h3>
-            <ul class="footer__ul">
-              <li class="footer__item">
+            <ul class="footer__ul footer__ul--additional">
+              <li class="footer__item footer__item--additional">
                 <a href="#" class="footer__link">About Us</a>
               </li>
-              <li class="footer__item">
+              <li class="footer__item footer__item--additional">
                 <a href="#" class="footer__link">Contact Us</a>
               </li>
-              <li class="footer__item">
+              <li class="footer__item footer__item--additional">
                 <a href="#" class="footer__link">How does it work? </a>
               </li>
-              <li class="footer__item">
+              <li class="footer__item footer__item--additional">
                 <a href="#" class="footer__link">Frequently Asked Questions</a>
               </li>
-              <li class="footer__item">
+              <li class="footer__item footer__item--additional">
                 <a href="#" class="footer__link">Deals.mu loyalty program</a>
               </li>
-              <li class="footer__item">
+              <li class="footer__item footer__item--additional">
                 <a href="#" class="footer__link"
                   >Promote your Business on BTP</a
                 >
@@ -950,23 +953,26 @@
               Send us a message
             </h3>
             <form action="send.php" method="post" class="form form-validate">
-              <div class="footer__input-group">
-                <input
-                  type="text"
-                  class="input footer__input"
-                  placeholder="Your Full Name*"
-                  name="name"
-                  required
-                />
-              </div>
-              <div class="footer__input-group">
-                <input
-                  type="tel"
-                  class="input footer__input phone"
-                  placeholder="Phone Number*"
-                  name="phone"
-                  required
-                />
+              <div class="footer__fixed">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input phone"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                  />
+                </div>
+                <!-- /.footer__fixed -->
               </div>
               <textarea
                 class="message footer__message"
