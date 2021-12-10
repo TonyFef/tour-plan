@@ -2753,6 +2753,11 @@ template {
   .footer__contact-form {
     width: 100%;
   }
+  .modal__dialog {
+    width: 80%;
+    height: 60%;
+    padding: auto;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2913,7 +2918,24 @@ template {
   }
 }
 
+@media (max-width: 450px) {
+  .modal__dialog {
+    width: 80%;
+    height: 60%;
+    padding: auto;
+  }
+  .modal__input {
+    min-width: 50px;
+  }
+}
+
 @media (max-width: 321px) {
+  .navbar-bottom--visible {
+    margin-top: -8px;
+  }
+  .navbar-menu__item--mobile {
+    margin-bottom: 17px;
+  }
   .footer {
     padding-bottom: 20px;
   }

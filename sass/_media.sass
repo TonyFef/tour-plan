@@ -553,7 +553,6 @@
             &-form
                 width: 480px
 
-
 @media (max-width: 576px)
     .logo
         max-width: 99px
@@ -629,10 +628,15 @@
         &__form
             width: 90%
         &__fixed
-            flex-wrap: wrap 
+            flex-wrap: wrap
         &__contact
             &-form
                 width: 100%
+    .modal
+        &__dialog
+            width: 80%
+            height: 60%
+            padding: auto
 
 @media (max-width: 480px)
     .container
@@ -751,8 +755,24 @@
     .modal
         &__input
             min-width: 230px
+@media (max-width: 450px)
+    .modal
+        &__dialog
+            width: 80%
+            height: 60%
+            padding: auto
+        &__input
+            min-width: 50px
 
 @media (max-width: 321px)
+    .navbar
+        &-bottom
+            &--visible
+                margin-top: -8px
+        &-menu
+            &__item
+                &--mobile
+                    margin-bottom: 17px
     .footer
         padding-bottom: 20px
         &__list
