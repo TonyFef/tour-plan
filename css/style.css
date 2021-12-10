@@ -1702,7 +1702,7 @@ template {
   color: inherit;
 }
 
-.footer__link:hover {
+.footer__link--tel:hover {
   color: red;
 }
 
@@ -1978,7 +1978,7 @@ template {
   .button:hover {
     background-color: #ec1f46;
   }
-  .footer__link:hover {
+  .footer__link--tel:hover {
     color: inherit;
   }
   .footer__conditions--link:hover {
