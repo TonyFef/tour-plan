@@ -65,8 +65,13 @@
         font-size: 14px
         line-height: 160%
         color: $footer-text-color
+        &--second
+            display: flex
+            flex-wrap: wrap
         &--mr-2
             margin-bottom: 20px
+        &--mr-5
+            align-items: center
     &__text
         font-style: normal
         font-weight: normal
@@ -77,6 +82,8 @@
         text-decoration: none
         color: inherit
         &--tel
+            text-decoration: none
+            color: $footer-text-color
             &:hover
                 color: red
 
