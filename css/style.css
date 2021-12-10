@@ -1787,6 +1787,11 @@ template {
   line-height: 15px;
 }
 
+.footer__conditions--link:hover {
+  color: red;
+  cursor: pointer;
+}
+
 .footer__submittion {
   width: 100%;
   display: -webkit-box;
@@ -1946,8 +1951,38 @@ template {
 }
 
 @media (max-width: 992px) {
-  a:hover, button:hover {
-    cursor: default;
+  .user__name:hover {
+    color: #333333;
+  }
+  .search__button:hover {
+    background-color: #ec1f46;
+  }
+  .navbar-menu__link:hover {
+    color: #fff;
+  }
+  .breadcrumb-list__link:hover {
+    color: inherit;
+  }
+  .booking__button:hover {
+    background-color: #ec1f46;
+  }
+  .packet__button:hover {
+    background-color: #ec1f46;
+  }
+  .subscribe__button:hover {
+    background-color: #ec1f46;
+  }
+  .card__button:hover {
+    background-color: #ec1f46;
+  }
+  .button:hover {
+    background-color: #ec1f46;
+  }
+  .footer__link:hover {
+    color: inherit;
+  }
+  .footer__conditions--link:hover {
+    color: inherit;
   }
   .container, .newsletter-wrapper {
     max-width: 700px;

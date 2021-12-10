@@ -26,9 +26,52 @@
         height: 200px
 
 @media (max-width: 992px)
-    a, button
+    .user
+        &__name
+            &:hover
+                color: $text-color
+    .search
+        &__button
+            &:hover
+                background-color: $primary
+    .navbar
+        &-menu
+            &__link
+                &:hover
+                    color: $light
+    .breadcrumb
+        &-list
+            &__link
+                &:hover
+                    color: inherit
+    .booking
+        &__button
+            &:hover
+                background-color: $primary
+    .packet
+        &__button
+            &:hover
+                background-color: $primary
+    .subscribe
+        &__button
+            &:hover
+                background-color: $primary
+    .card
+        &__button
+            &:hover
+                background-color: $primary
+    .button
         &:hover
-            cursor: default
+            background-color: $primary
+    .footer
+        &__link
+            &:hover
+                color: inherit
+        &__conditions
+            &--link
+                &:hover
+                    color: inherit
+
     .container, .newsletter-wrapper
         max-width: 700px
     .logo
