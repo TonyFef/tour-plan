@@ -52,6 +52,10 @@ input {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #aaa;
+}
+
 .message {
   background-color: #fff;
   border-radius: 4px;
@@ -489,6 +493,10 @@ template {
   line-height: 19px;
 }
 
+.navbar-menu__link:hover {
+  color: red;
+}
+
 .navbar-menu__item--mobile_visible {
   display: none;
 }
@@ -570,6 +578,10 @@ template {
   color: #333333;
 }
 
+.search__button:hover {
+  background-color: #aaa;
+}
+
 .search__button__button {
   position: absolute;
   padding: 12px 25px 12px 25px;
@@ -606,6 +618,10 @@ template {
   color: #333333;
 }
 
+.user__name:hover {
+  color: red;
+}
+
 .breadcrumb-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -633,6 +649,10 @@ template {
 .breadcrumb-list__link {
   text-decoration: none;
   color: inherit;
+}
+
+.breadcrumb-list__link:hover {
+  color: red;
 }
 
 .hotel {
@@ -928,6 +948,10 @@ template {
   cursor: pointer;
 }
 
+.booking__button:hover {
+  background-color: #aaa;
+}
+
 .map {
   width: 347px;
   height: 213px;
@@ -1119,6 +1143,10 @@ template {
   cursor: pointer;
 }
 
+.packet__button:hover {
+  background-color: #aaa;
+}
+
 .other-packet__image {
   width: 50%;
   height: 100%;
@@ -1276,6 +1304,10 @@ template {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   overflow: hidden;
+}
+
+.subscribe__button:hover {
+  background-color: #aaa;
 }
 
 .reviews {
@@ -1521,6 +1553,10 @@ template {
   cursor: pointer;
 }
 
+.card__button:hover {
+  background-color: #aaa;
+}
+
 .footer {
   background-color: #0A223D;
   color: #fff;
@@ -1664,6 +1700,10 @@ template {
 .footer__link {
   text-decoration: none;
   color: inherit;
+}
+
+.footer__link:hover {
+  color: red;
 }
 
 .footer__icon-wrapper {
