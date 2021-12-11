@@ -81,7 +81,11 @@
     &__link
         text-decoration: none
         color: inherit
-        &--tel
+        text-decoration: none
+        color: $footer-text-color
+        &:hover
+            color: red
+        &-tel
             text-decoration: none
             color: $footer-text-color
             &:hover
@@ -129,7 +133,9 @@
         font-weight: normal
         font-size: 12px
         line-height: 15px
-        &--link
+        &-link
+            text-decoration: none
+            color: #bdbdbd
             &:hover
                 color: red
                 cursor: pointer

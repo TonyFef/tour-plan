@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="https://use.typekit.net/qyy7dsg.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="font"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -31,7 +33,7 @@
 
           <!-- Строка поиска -->
           <form
-            action="#"
+            action="index.html"
             class="search navbar__search navbar__search--mobile_hidden"
           >
             <input
@@ -45,7 +47,7 @@
           </form>
 
           <a
-            href="#"
+            href="index.html"
             target="blank"
             class="user navbar__user navbar__user--mobile_hidden"
           >
@@ -73,7 +75,7 @@
           <ul class="navbar-menu">
             <li class="navbar-menu__item navbar-menu__item--mobile_visible">
               <a
-                href="#"
+                href="index.html"
                 target="blank"
                 class="user navbar__user navbar__user--mobile_visible"
               >
@@ -87,7 +89,7 @@
             </li>
             <li class="navbar-menu__item navbar-menu__item--mobile_visible">
               <form
-                action="#"
+                action="index.html"
                 class="search navbar__search navbar__search--mobile_visible"
               >
                 <input
@@ -101,25 +103,25 @@
               </form>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">All Deals</a>
+              <a href="index.html" class="navbar-menu__link">All Deals</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotels</a>
+              <a href="index.html" class="navbar-menu__link">Hotels</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Activities</a>
+              <a href="index.html" class="navbar-menu__link">Activities</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+              <a href="index.html" class="navbar-menu__link">Hotel Day Packages</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Restaurants</a>
+              <a href="index.html" class="navbar-menu__link">Restaurants</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Events</a>
+              <a href="index.html" class="navbar-menu__link">Events</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Rodrigues</a>
+              <a href="index.html" class="navbar-menu__link">Rodrigues</a>
             </li>
           </ul>
         </div>
@@ -134,10 +136,10 @@
       <div class="container">
         <ul class="breadcrumb-list">
           <li class="breadcrumb-list__item">
-            <a href="#" class="breadcrumb-list__link">Home</a>
+            <a href="index.html" class="breadcrumb-list__link">Home</a>
           </li>
           <li class="breadcrumb-list__item">
-            <a href="#" class="breadcrumb-list__link">Flash Offer</a>
+            <a href="index.html" class="breadcrumb-list__link">Flash Offer</a>
           </li>
           <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
         </ul>
@@ -167,7 +169,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="index.html" class="footer__logo">
+          <a href="index.html" class="footer__logo" target="blank">
             <img
               src="img/vertical-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -178,28 +180,30 @@
             <h3 class="footer__title">ALL&nbsp;CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item">
-                <a href="#" class="footer__link">All Deals</a>
+                <a href="index.html" class="footer__link" target="blank">All Deals</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Hotels</a>
+                <a href="index.html" class="footer__link" target="blank">Hotels</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Activities</a>
+                <a href="index.html" class="footer__link" target="blank">Activities</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Spa Packages</a>
+                <a href="index.html" class="footer__link" target="blank">Spa Packages</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Hotel Day Packages</a>
+                <a href="index.html" class="footer__link" target="blank"
+                  >Hotel Day Packages</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Restaurants</a>
+                <a href="index.html" class="footer__link" target="blank">Restaurants</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Fitness</a>
+                <a href="index.html" class="footer__link" target="blank">Fitness</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Rodrigues</a>
+                <a href="index.html" class="footer__link" target="blank">Rodrigues</a>
               </li>
             </ul>
           </div>
@@ -208,22 +212,28 @@
             <h3 class="footer__title">ADDITIONAL&nbsp;INFORMATION</h3>
             <ul class="footer__ul footer__ul--additional">
               <li class="footer__item footer__item--additional">
-                <a href="#" class="footer__link">About Us</a>
+                <a href="index.html" class="footer__link" target="blank">About Us</a>
               </li>
               <li class="footer__item footer__item--additional">
-                <a href="#" class="footer__link">Contact Us</a>
+                <a href="index.html" class="footer__link" target="blank">Contact Us</a>
               </li>
               <li class="footer__item footer__item--additional">
-                <a href="#" class="footer__link">How does it work? </a>
+                <a href="index.html" class="footer__link" target="blank"
+                  >How does it work?
+                </a>
               </li>
               <li class="footer__item footer__item--additional">
-                <a href="#" class="footer__link">Frequently Asked Questions</a>
+                <a href="index.html" class="footer__link" target="blank"
+                  >Frequently Asked Questions</a
+                >
               </li>
               <li class="footer__item footer__item--additional">
-                <a href="#" class="footer__link">Deals.mu loyalty program</a>
+                <a href="index.html" class="footer__link" target="blank"
+                  >Deals.mu loyalty program</a
+                >
               </li>
               <li class="footer__item footer__item--additional">
-                <a href="#" class="footer__link"
+                <a href="index.html" class="footer__link" target="blank"
                   >Promote your Business on BTP</a
                 >
               </li>
@@ -235,11 +245,20 @@
               Social&nbsp;Network
             </h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a
+                href="https://ru-ru.facebook.com/"
+                class="footer__link"
+                target="blank"
                 ><img src="img/fb.svg" alt="Icon: facebooke" /></a
-              ><a href="#" class="footer__link"
+              ><a
+                href="https://www.youtube.com/"
+                class="footer__link"
+                target="blank"
                 ><img src="img/yt.svg" alt="Icon: youtube" /></a
-              ><a href="#" class="footer__link"
+              ><a
+                href="https://www.instagram.com/accounts/login/"
+                class="footer__link"
+                target="blank"
                 ><img src="img/inst.svg" alt="Icon: instagram"
               /></a>
             </div>
@@ -250,16 +269,20 @@
             <h3 class="footer__title">LEGAL&nbsp;INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
-                <a href="#" class="footer__link">Terms & Conditions</a>
+                <a href="index.html" class="footer__link" target="blank"
+                  >Terms & Conditions</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Disclaimer</a>
+                <a href="index.html" class="footer__link" target="blank">Disclaimer</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Cancellation policy</a>
+                <a href="index.html" class="footer__link" target="blank"
+                  >Cancellation policy</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Privacy</a>
+                <a href="index.html" class="footer__link" target="blank">Privacy</a>
               </li>
             </ul>
           </div>
@@ -270,7 +293,7 @@
               Feel free to contact us by phone, email or by our contact form
             </p>
             <ul class="footer__ul footer__ul--pd-7">
-              <li class="footer__item footer__item--mr-2">
+              <li class="footer__item footer__item--mr-2 footer__item--mr-5">
                 <div class="footer__icon-wrapper">
                   <img
                     src="img/map-marker.svg"
@@ -291,21 +314,21 @@
                 </div>
                 <ul class="footer__ul footer__ul--tel">
                   <li class="footer__item">
-                    <a href="tel=2691500" class="footer__link"
-                      >Tel (business hours): 269&nbsp;1500</a
-                    >
+                    <span class="footer__item-text" >Tel (business hours):&ensp; </span>
+                    <a href="tel:2691500" class="footer__link-tel">269 1500</a>
                   </li>
-                  <li class="footer__item">
-                    <a href="tel=52-56-61-38" class="footer__link"
-                      >Tel (hotline) Monday - Saturday:
-                      52&#8209;56&#8209;61&#8209;38 (08:00 am – 20:00 pm)</a
-                    >
+                  <li class="footer__item footer__item--second">
+                    <span class="footer__item-text" >Tel (hotline) Monday - Saturday:&ensp;</span>
+                    <a href="tel:52-56-61-38" class="footer__link-tel">
+                      52 56 61 38
+                    </a>
+                    &ensp;(08:00 am – 20:00 pm)
                   </li>
-                  <li class="footer__item">
-                    <a href="tel=52-56-61-38 " class="footer__link"
-                      >Tel (hotline) Sunday: 52&#8209;56&#8209;61&#8209;38
-                      (08:00 am – 14:00 pm)</a
-                    >
+                  <li class="footer__item footer__item--second">
+                    Tel (hotline) Sunday:&ensp;
+                    <a href="tel:52-56-61-38 " class="footer__link-tel">
+                      52 56 61 38 </a
+                    >&ensp;(08:00 am – 14:00 pm)
                   </li>
                 </ul>
               </li>
@@ -318,7 +341,7 @@
                     class="footer__icon"
                   />
                 </div>
-                <a href="mail=cherly.lawson@example.com" class="footer__link"
+                <a href="mailto:cherly.lawson@example.com" class="footer__link"
                   >cherly.lawson@example.com</a
                 >
               </li>
@@ -370,9 +393,9 @@
         <div class="footer__wrapper-info">
           <div class="footer__info-pay">
             <div class="footer__conditions">
-              <span>Disclaimer</span>
-              <span>Conditions of use</span>
-              <span>Cancellation policy</span>
+              <a href="index.html" class="footer__conditions-link" target="blank" >Disclaimer</a>
+              <a href="index.html" class="footer__conditions-link" target="blank">Conditions of use</a>
+              <a href="index.html" class="footer__conditions-link" target="blank">Cancellation policy</a>
             </div>
             <!-- /.footer__conditions -->
             <img src="img/pay.png" alt="Photo: pay" class="footer__pay" />
@@ -382,7 +405,10 @@
       </div>
       <!-- /.container -->
     </footer>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main-copy.js"></script>
   </body>
 </html>
